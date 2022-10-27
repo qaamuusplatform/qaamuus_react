@@ -11,10 +11,12 @@ export default function EventsList() {
                     <div className="page-header__content">
                         <div className="row justify-center text-center">
                             <div className="col-auto">
-                                <div data-anim="slide-up delay-1">
+                                {/* <div data-anim="slide-up delay-1"> */}
+                                <div>
                                     <h1 className="page-header__title">Event</h1>
                                 </div>
-                                <div data-anim="slide-up delay-2">
+                                {/* <div data-anim="slide-up delay-2"> */}
+                                <div>
                                     <p className="page-header__text">We’re on a mission to deliver engaging, curated courses at a reasonable price.</p>
                                 </div>
                             </div>
@@ -23,11 +25,13 @@ export default function EventsList() {
                 </div>
             </section>
             <section className="layout-pt-md layout-pb-lg">
-                <div data-anim-wrap className="container">
+                {/* <div data-anim-wrap className="container"> */}
+                <div className="container">
                     <div className="row y-gap-30">
                         <div className="col-lg-3 lg:order-2">
                             <div className="pr-30 lg:pr-0">
-                                <div data-anim="slide-up delay-3" className="sidebar -blog -no-border">
+                                {/* <div data-anim="slide-up delay-3" className="sidebar -blog -no-border"> */}
+                                <div  className="sidebar -blog -no-border">
                                     <div className="sidebar__item">
                                         <h5 className="sidebar__title">Find Event</h5>
                                         <div className="sidebar-content -event">
@@ -148,7 +152,8 @@ export default function EventsList() {
                                     </div>
                                 </div>
                             </div>
-                            <div data-anim="slide-up delay-4" className="row y-gap-30">
+                            {/* <div data-anim="slide-up delay-4" className="row y-gap-30"> */}
+                            <div className="row y-gap-30">
                                 <div className="col-lg-4 col-md-6">
                                     <a href="#" className="eventCard -type-2 bg-white">
                                         <div className="eventCard__img">

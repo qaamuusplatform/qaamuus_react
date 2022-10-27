@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function CoursesList() {
     return (
         <>     
@@ -10,7 +10,8 @@ export default function CoursesList() {
                     <div className="page-header__content">
                         <div className="row">
                             <div className="col-auto">
-                                <div data-anim="slide-up delay-1">
+                                {/* <div data-anim="slide-up delay-1"> */}
+                                <div >
                                     <h1 className="page-header__title">User Interface Courses</h1>
                                 </div>
                                 <div data-anim="slide-up delay-2">
@@ -20,7 +21,8 @@ export default function CoursesList() {
                         </div>
                     </div>
                 </div>
-                <div data-anim="slide-up delay-2" className="container">
+                {/* <div data-anim="slide-up delay-2" className="container"> */}
+                <div className="container">
                     <div className="accordion js-accordion">
                         <div className="accordion__item">
                             <div className="row y-gap-20 items-center justify-between pb-30">
@@ -489,7 +491,7 @@ export default function CoursesList() {
                     <div className="row y-gap-30">
 
                         <div className="col-xl-4 col-lg-4 col-md-6">
-                            <a href="courses-single-1.html" className="coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
+                            <Link  className="coursesCard -type-1 px-10 py-10 border-light bg-white rounded-8">
                                 <div className="relative">
                                     <div className="coursesCard__image overflow-hidden rounded-8">
                                         <img className="w-1/1" src="assets/img/coursesCards/1.png" alt="image" />
@@ -542,7 +544,7 @@ export default function CoursesList() {
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
 
                         </div>
                         <div className="col-xl-4 col-lg-4 col-md-6">

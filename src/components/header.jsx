@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from "react-router-dom";
 export default function Header() {
     return (
-         <header data-anim="fade" data-add-bg="bg-dark-1" className="header -type-1 js-header">
+        // <header data-anim="fade" data-add-bg="bg-dark-1" className="header -type-1 js-header">
+         <header data-add-bg="bg-dark-1" className="header -type-1 js-header">
             <div className="header__container">
                 <div className="row justify-between items-center">
                     <div className="col-auto">
@@ -153,7 +154,7 @@ export default function Header() {
                             <div className="mobile-bg js-mobile-bg" />
                             <div className="d-none xl:d-flex items-center px-20 py-20 border-bottom-light">
                                 <a href="login.html" className="text-dark-1">Log in</a>
-                                <a href="signup.html" className="text-dark-1 ml-30">Sign Up</a>
+                                <a href="/join/signup" className="text-dark-1 ml-30">Sign Up</a>
                             </div>
                             <div className="menu js-navList">
                                 <ul className="menu__nav text-white -is-active">
@@ -252,7 +253,7 @@ export default function Header() {
                                                 <a href="login.html">Login</a>
                                             </li>
                                             <li>
-                                                <a href="signup.html">Register</a>
+                                                <a href="/join/signup">Register</a>
                                             </li>
                                             <li>
                                                 <a href="ui-elements.html">UI Elements</a>
@@ -403,7 +404,7 @@ export default function Header() {
                             </div>
                             <div className="header-right__buttons d-flex items-center ml-30 md:d-none">
                                 <a href="login.html" className="button -underline text-white">Log in</a>
-                                <a href="signup.html" className="button -sm -white text-dark-1 ml-30">Sign up</a>
+                                <Link to="/join/signup" className="button -sm -white text-dark-1 ml-30">Sign up</Link>
                             </div>
                         </div>
                     </div>

@@ -8,6 +8,7 @@ import Courses from './pages/courses';
 import EventDetail from './pages/eventDetail';
 import Events from './pages/events';
 import Home from './pages/home';
+import SingUp from './pages/singUp';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='events' element={<Events />} />
         <Route path='course/:crId' element={<CourseDetail />} />
         <Route path='event/:evtId' element={<EventDetail />} />
+        <Route path='join/signup' element={<SingUp />} />
       </Routes>
     </BrowserRouter>
 
